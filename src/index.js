@@ -1,16 +1,16 @@
-// import React from 'react';
-import ReactDOM from 'react-dom';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 // import { Provider } from 'react-redux';
 // import { createStore } from 'redux';
 // import reducer from './reducers/'
-// import App from './routes/App';
+import App from './routes/App';
 
 // const initialState = {};
 // const store = createStore(reducer, initialState);
 
 ReactDOM.render(
   // <Provider store={store}>
-    <h1>hello world </h1>,
+    <App />,
   // </Provider>,
   document.getElementById('app')
 );
