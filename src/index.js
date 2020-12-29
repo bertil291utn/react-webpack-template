@@ -10,7 +10,7 @@ import App from './routes/App';
 
 ReactDOM.render(
   // <Provider store={store}>
-    <App />,
+  <App />,
   // </Provider>,
-  document.getElementById('app')
+  document.getElementById('app'),
 );

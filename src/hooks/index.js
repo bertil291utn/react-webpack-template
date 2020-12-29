@@ -6,12 +6,12 @@ import { useState, useEffect } from 'react';
  * *Save with setPets state all data
  * @param url API url
  */
-const useGetPets = (url) => {
+const useGetPets = url => {
   const [pets, setPets] = useState([]);
   useEffect(() => {
     fetch(url)
-      .then((response) => response.json())
-      .then((data) => setPets(data));
+      .then(response => response.json())
+      .then(data => setPets(data));
   }, []);
   return pets;
 };
